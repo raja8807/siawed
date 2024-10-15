@@ -21,7 +21,7 @@
 
     .right {
       display: flex;
-      gap: 30px;
+      gap: 100px;
       h1 {
         font-size: 22px;
         // color: $color_p1;
@@ -46,8 +46,9 @@
         }
       }
 
-      @include respond-below(sm){
+      @include respond-below(sm) {
         flex-direction: column;
+        gap: 30px;
       }
     }
   }
