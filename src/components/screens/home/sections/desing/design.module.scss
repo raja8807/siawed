@@ -16,30 +16,43 @@
       .text {
         background-color: $color_p3;
         @include flexCenter;
-        padding: 60px;
-        position: relative;
+        flex-direction: column;
+        padding: 0 70px;
 
-        .flower {
-          position: absolute;
-          top: 0;
-          right: 12px;
-          transform: rotate(-120deg);
-
-          &.f2 {
-            transform: rotate(40deg);
-
-            left: -8px !important;
-            //   background-color: red;
-            top: unset;
-            bottom: 0;
-          }
-        }
-
-        h2 {
-          font-size: 55px;
-          margin-bottom: 16px;
+        p {
+          font-size: 60px;
+          line-height: 60px;
+          text-align: center;
         }
       }
+
+      // .text {
+      //   background-color: $color_p3;
+      //   @include flexCenter;
+      //   padding: 60px;
+      //   position: relative;
+
+      //   .flower {
+      //     position: absolute;
+      //     top: 0;
+      //     right: 12px;
+      //     transform: rotate(-120deg);
+
+      //     &.f2 {
+      //       transform: rotate(40deg);
+
+      //       left: -8px !important;
+      //       //   background-color: red;
+      //       top: unset;
+      //       bottom: 0;
+      //     }
+      //   }
+
+      //   h2 {
+      //     font-size: 55px;
+      //     margin-bottom: 16px;
+      //   }
+      // }
     }
     &.row2 {
       .img {
@@ -53,6 +66,18 @@
           flex-direction: column;
           gap: 16px;
 
+          .points {
+            > p {
+              font-weight: bold;
+              font-size: 18px;
+            }
+          }
+
+          li {
+            margin-bottom: 5px;
+            margin-left: 30px;
+          }
+
           hr {
             border: none;
             background-color: white;
@@ -62,11 +87,11 @@
           }
 
           h2 {
-            font-size: 55px;
+            font-size: 45px;
           }
 
           p {
-            font-size: 15px;
+            // font-size: 15px;
           }
         }
       }
@@ -80,14 +105,9 @@
 
       &.row1 {
         .text {
-          padding: 100px 20px;
-
-          h2 {
-            font-size: 45px;
-          }
-
-          .flower {
-            width: 140px;
+          padding: 40px 20px ;
+          p {
+            font-size: 50px;
           }
         }
       }
@@ -103,31 +123,6 @@
     .sectionRow {
       display: flex;
       flex-direction: column;
-
-      &.row1 {
-        .text {
-          padding: 150px 20px;
-
-          h2 {
-            font-size: 45px;
-          }
-
-          .flower {
-            width: 120px;
-            right: 0;
-            transform: rotate(-130deg);
-
-            &.f2 {
-              transform: rotate(40deg);
-
-              left: -8px !important;
-              //   background-color: red;
-              top: unset;
-              bottom: 0;
-            }
-          }
-        }
-      }
     }
   }
 }
