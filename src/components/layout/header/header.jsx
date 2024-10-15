@@ -9,6 +9,7 @@ import { Image } from "react-bootstrap";
 import CustomButton from "@/components/ui/custom_button/custom_button";
 import { useRouter } from "next/router";
 import HeaderDrawer from "./header_drawer/header_drawer";
+import PAGES from "@/constants/pages";
 
 const MenuButton = ({ pages, router }) => {
   const [showHeader, setShowHeader] = useState(false);
@@ -33,24 +34,7 @@ const MenuButton = ({ pages, router }) => {
 };
 
 const Header = () => {
-  const pages = [
-    {
-      name: "Home",
-      href: "/",
-    },
-    {
-      name: "About us",
-      href: "/about",
-    },
-    {
-      name: "Gallery",
-      href: "/gallery",
-    },
-    {
-      name: "Contact Us",
-      href: "/contact",
-    },
-  ];
+  const pages =  PAGES;
 
   const router = useRouter();
 
