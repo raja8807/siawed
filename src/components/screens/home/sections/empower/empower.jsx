@@ -7,13 +7,13 @@ const EmpowerSection = () => {
     <section className={styles.EmpowerSection}>
       <CustomContainer>
         <div>
-          <h2>
+          <h2 data-aos="fade-up">
             Empowering Women to Achieve <br />
             Global Success
           </h2>
         </div>
         <div>
-          <p>
+          <p data-aos="fade-left">
             SIAWED is committed to advancing female empowerment in India and
             across the globe. Through our expertly curated sessions and virtual
             networking events, we aim to inspire and ​empower female
@@ -24,7 +24,7 @@ const EmpowerSection = () => {
             celebrate women in business.
           </p>
           <br />
-          <p>
+          <p data-aos="fade-right">
             SIAWED, we are leading the charge in empowering and supporting
             visionary female entrepreneurs. We host symposiums that focus on
             women’s entrepreneurship and ​empowerment, unlocking the vast

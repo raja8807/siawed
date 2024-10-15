@@ -17,13 +17,13 @@ const PowerUpSection = () => {
               className={styles.img}
             />
             <div>
-              <h2>
+              <h2 data-aos="fade-right">
                 How do we power up
                 <br /> your business
               </h2>
               <div className={styles.ol}>
-                <h2>Growth?</h2>
-                <p>
+                <h2 data-aos="fade-right">Growth?</h2>
+                <p data-aos="fade-left">
                   We&apos;re all about turning dreams into reality! Our
                   organization is here to help ambitious women like you achieve
                   your goals and bring your vision to life. From your first step

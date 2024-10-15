@@ -8,19 +8,24 @@ const CustomerSection = () => {
     <section className={styles.CustomerSection}>
       <CustomContainer>
         <div>
-          <h2>&quot;Your Next Big Customer</h2>
+          <h2 data-aos="fade-right">&quot;Your Next Big Customer</h2>
         </div>
         <div className={styles.wrap}>
           <div className={styles.left}>
-            <h2>
+            <h2 data-aos="fade-right">
               Could Be <br />
               Waiting at <br />
               SIAWED!&quot;
             </h2>
 
-            <Image src="/assets/images/vector.png" fluid alt="vector" />
+            <Image
+              src="/assets/images/vector.png"
+              fluid
+              alt="vector"
+              data-aos="zoom-in"
+            />
           </div>
-          <div className={styles.right}>
+          <div className={styles.right} data-aos="flip-left">
             <Image src="/assets/images/conference.png" fluid alt="conference" />
             <p>
               With over 300 entrepreneurs in SIAWED, networking and building

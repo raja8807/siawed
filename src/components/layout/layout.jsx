@@ -2,12 +2,12 @@ import React from "react";
 import Header from "./header/header";
 import Footer from "./footer/footer";
 
-const Layout = ({ children, cartItems, setCartItems, products }) => {
+const Layout = ({ children}) => {
   return (
     <div>
-      <Header cartItems={cartItems} setCartItems={setCartItems} />
+      <Header  />
       {children}
-      <Footer products={products} />
+      {/* <Footer products={products} /> */}
     </div>
   );
 };

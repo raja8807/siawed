@@ -13,6 +13,7 @@ const DedicatedSection = () => {
               src="/assets/images/two-smiling-female-colleagues.jpg"
               alt="two-smiling-female-colleagues"
               fluid
+              data-aos="fade-right"
             />
           </div>
           <div className={styles.text}>
@@ -21,11 +22,12 @@ const DedicatedSection = () => {
               alt="flower-vector"
               className={styles.flower}
               width={190}
+              data-aos="fade-right"
             />
             <div>
-              <h2>SIAWED is dedicated</h2>
+              <h2 data-aos="fade-right">SIAWED is dedicated</h2>
 
-              <p>
+              <p data-aos="fade-left">
                 to enhancing the entrepreneurial skills and training of its
                 members by offering a ​range of programs, courses, and
                 collaborations with corporations and relevant ​entities. We
@@ -39,6 +41,7 @@ const DedicatedSection = () => {
                 alt="flower-vector"
                 className={`${styles.flower} ${styles.f2}`}
                 width={190}
+                data-aos="fade-right"
               />
             </div>
           </div>
@@ -46,12 +49,12 @@ const DedicatedSection = () => {
         <div className={`${styles.sectionRow} ${styles.row2}`}>
           <div className={styles.text}>
             <div>
-              <h2>Shaping the Future:</h2>
-              <h3>
+              <h2 data-aos="fade-up">Shaping the Future:</h2>
+              <h3 data-aos="fade-down">
                 The Impactful Role of Women in ​Business and Entrepreneurship
               </h3>
-              <hr />
-              <p>
+              <hr data-aos="fade-down" />
+              <p data-aos="fade-right">
                 Women&apos;s entrepreneurship and leadership have the power to
                 drive profound social ​change, empowering more women to become
                 confident, financially independent, and ​influential in their
@@ -61,14 +64,14 @@ const DedicatedSection = () => {
                 ​women entrepreneurs in India. The momentum for change is
                 building steadily and ​unmistakably.
               </p>
-              <p>
+              <p data-aos="fade-left">
                 Today, women in business are essential and irreplaceable
                 contributors to the global ​quest for economic stability. This
                 acknowledgment is equally strong in India, where ​women are
                 emerging as powerful change-makers, representing the
                 transformative ​influence they wield across various sectors.
               </p>
-              <p>
+              <p data-aos="fade-right">
                 Women are recognized as pivotal forces in entrepreneurship,
                 poised to continue ​leading change for years to come. Women
                 entrepreneurs bring unique perspectives ​and innovative thought
@@ -89,6 +92,7 @@ const DedicatedSection = () => {
               src="/assets/images/women-vector.png"
               alt="two-smiling-female-colleagues"
               fluid
+              data-aos="fade-left"
             />
           </div>
         </div>

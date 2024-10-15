@@ -9,7 +9,7 @@ const DesignSection = () => {
       <CustomContainer noSmPadding>
         <div className={`${styles.sectionRow} ${styles.row2}`}>
           <div className={styles.text}>
-            <div>
+            <div data-aos="zoom-in">
               <h2>SIAWED is best Designed For:</h2>
               <hr />
               <div className={styles.points}>
@@ -102,22 +102,36 @@ const DesignSection = () => {
               src="/assets/images/women-vector-2.png"
               alt="two-smiling-female-colleagues"
               fluid
+              data-aos="fade-left"
             />
           </div>
         </div>
+      </CustomContainer>
+      <CustomContainer noSmPadding>
         <div className={`${styles.sectionRow} ${styles.row1}`}>
           <div className={styles.img}>
             <Image
               src="/assets/images/girl.png"
               alt="two-smiling-female-colleagues"
               fluid
+              data-aos="fade-right"
             />
           </div>
           <div className={styles.text}>
-            
-            <Image src="/assets/images/flower.png" alt="flower" fluid width={400}/>
-            <p>Empower Our ​Women and Girls</p>
-            <Image src="/assets/images/divider-vector.png" alt="divider" width={250}/>
+            <Image
+              src="/assets/images/flower.png"
+              alt="flower"
+              fluid
+              width={400}
+              data-aos="zoom-in"
+            />
+            <p data-aos="fade-left">Empower Our ​Women and Girls</p>
+            <Image
+              src="/assets/images/divider-vector.png"
+              alt="divider"
+              width={250}
+              data-aos="zoom-out"
+            />
           </div>
         </div>
       </CustomContainer>

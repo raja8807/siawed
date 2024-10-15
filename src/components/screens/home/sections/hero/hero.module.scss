@@ -5,6 +5,7 @@
   background-position: center;
   max-width: 100dvw;
   overflow: hidden;
+  padding-top: 40px;
 
   .container {
     max-width: 1420px;
@@ -35,6 +36,11 @@
       //   padding: 0 30px;
       width: 35%;
       padding-right: 50px;
+
+      .logo {
+        width: 300px;
+        margin: auto;
+      }
 
       .textContent {
         // height: 400px;
@@ -119,7 +125,7 @@
         align-items: flex-start;
 
         .logo {
-          width: 400px;
+          //   width: 400px;
           margin-top: 50px;
         }
       }
@@ -156,7 +162,7 @@
   }
 
   @include respond-below(sm) {
-    background-position: -200px;
+    background-position: -150px;
     .container {
       //   height: 100dvh;
       overflow: hidden;
@@ -181,6 +187,9 @@
 
       .right {
         .logo {
+          img {
+            width: 300px;
+          }
           padding: 0 20px;
           width: unset;
         }

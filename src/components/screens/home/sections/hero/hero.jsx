@@ -9,7 +9,7 @@ const HeroSection = () => {
       <section className={styles.HeroSection}>
         <div className={styles.container}>
           <div className={styles.wrap}>
-            <div className={styles.left}>
+            <div className={styles.left} data-aos="fade-up">
               <h1>
                 <span>“Together</span>
                 <br />
@@ -24,10 +24,10 @@ const HeroSection = () => {
             </div>
 
             <div className={styles.right}>
-              <div className={styles.logo}>
+              <div className={styles.logo} data-aos="fade-left">
                 <Image src="/logo/logo.png" alt="logo" fluid />
               </div>
-              <div className={styles.textContent}>
+              <div className={styles.textContent} data-aos="fade-right">
                 <div className={styles.inner}>
                   <p className={styles.top}>
                     We are a trailblazing digital community that celebrates the
@@ -53,7 +53,7 @@ const HeroSection = () => {
       </section>
       <div className={styles.bottomCont}>
         <div className={styles.wrap}>
-          <div className={styles.textContent}>
+          <div className={styles.textContent} data-aos="fade-down">
             <div className={styles.inner}>
               <p className={styles.top}>
                 We are a trailblazing digital community that celebrates the

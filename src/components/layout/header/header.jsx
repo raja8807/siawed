@@ -4,28 +4,55 @@ import styles from "./header.module.scss";
 import CustomContainer from "@/components/ui/custom_container/custom_container";
 // import Image from "next/image";
 import Link from "next/link";
-import { Plus, X } from "react-bootstrap-icons";
-import CartButton from "./cart_button/cart_button";
+import { List, Plus, X } from "react-bootstrap-icons";
 import { Image } from "react-bootstrap";
+import CustomButton from "@/components/ui/custom_button/custom_button";
+import { useRouter } from "next/router";
+import HeaderDrawer from "./header_drawer/header_drawer";
 
-const Menu = ({ setShowMenu }) => {
+const MenuButton = ({ pages, router }) => {
+  const [showHeader, setShowHeader] = useState(false);
+
   return (
-    <div
-      className={styles.menu}
-      onClick={() => {
-        setShowMenu(false);
-      }}
-    >
-      <Link href="/">HOME</Link>
-      <Link href="/shop">SHOP NOW</Link>
-      <Link href="/about">ABOUT US</Link>
-      <Link href="/contact">CONTACT</Link>
-    </div>
+    <>
+      <div className={styles.MenuButton}>
+        <List
+          onClick={() => {
+            setShowHeader(true);
+          }}
+        />
+      </div>
+      <HeaderDrawer
+        show={showHeader}
+        setShow={setShowHeader}
+        pages={pages}
+        router={router}
+      />
+    </>
   );
 };
 
-const Header = ({ cartItems, setCartItems }) => {
-  const [showMenu, setShowMenu] = useState(false);
+const Header = () => {
+  const pages = [
+    {
+      name: "Home",
+      href: "/",
+    },
+    {
+      name: "About us",
+      href: "/about",
+    },
+    {
+      name: "Gallery",
+      href: "/gallery",
+    },
+    {
+      name: "Contact Us",
+      href: "/contact",
+    },
+  ];
+
+  const router = useRouter();
 
   return (
     <header className={styles.Header}>
@@ -33,28 +60,30 @@ const Header = ({ cartItems, setCartItems }) => {
         <div className={styles.wrap}>
           <div className={styles.logo}>
             <Link href="/">
-              <Image
-                src="/logo/logo_main1.png"
-                alt="main_logo"
-                width={'auto'}
-                height={80}
-              />
+              <Image src="/logo/logo.png" alt="main_logo" width={180} />
             </Link>
           </div>
 
           <div className={styles.right}>
-            <CartButton cartItems={cartItems} setCartItems={setCartItems} />
-            <div className={styles.menuIcon}>
-              {showMenu && <Menu setShowMenu={setShowMenu} />}
-              <Plus
-                className={`${styles.ico} ${
-                  showMenu ? styles.open : styles.close
-                }`}
-                onClick={() => {
-                  setShowMenu((p) => !p);
-                }}
-              />
-            </div>
+            <nav className={styles.fullNav}>
+              <ul>
+                {pages.map((page) => {
+                  return (
+                    <li
+                      key={page.name}
+                      className={`${styles.navItem} ${
+                        router.pathname === page.href ? styles.active : ""
+                      }`}
+                    >
+                      <Link href={page.href}>{page.name}</Link>
+                    </li>
+                  );
+                })}
+                <CustomButton>Donate Us</CustomButton>
+              </ul>
+            </nav>
+
+            <MenuButton pages={pages} router={router} />
           </div>
         </div>
       </CustomContainer>

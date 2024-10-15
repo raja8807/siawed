@@ -11,7 +11,7 @@ import styles from "./scroller.module.scss";
 // import './styles.css';
 
 // import required modules
-import { Pagination, Navigation,Autoplay } from "swiper/modules";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 
 export default function App() {
   const cards = [
@@ -88,6 +88,7 @@ export default function App() {
         pagination={{
           clickable: true,
         }}
+        data-aos="fade-up"
         breakpoints={{
           320: {
             slidesPerView: 1,
@@ -106,7 +107,7 @@ export default function App() {
             spaceBetween: 50,
           },
         }}
-        modules={[Pagination, Navigation,Autoplay]}
+        modules={[Pagination, Navigation, Autoplay]}
         className="mySwiper"
         autoplay={{
           delay: 2500,
