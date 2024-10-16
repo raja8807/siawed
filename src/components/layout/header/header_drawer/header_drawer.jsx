@@ -29,12 +29,19 @@ const HeaderDrawer = ({ show, setShow, pages, router }) => {
                       router.pathname === page.href ? styles.active : ""
                     }`}
                   >
-                    <Link href={page.href}>{page.name}</Link>
+                    <Link
+                      href={page.href}
+                      onClick={() => {
+                        setShow(false);
+                      }}
+                    >
+                      {page.name}
+                    </Link>
                   </li>
                 );
               })}
             </ul>
-              <CustomButton>Donate Us</CustomButton>
+            <CustomButton>Donate Us</CustomButton>
           </nav>
         </div>
       </Modal.Body>

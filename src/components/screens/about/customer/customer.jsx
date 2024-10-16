@@ -27,10 +27,10 @@ const CustomerSection = () => {
           </div>
           <div className={styles.right} data-aos="flip-left">
             <Image src="/assets/images/conference.png" fluid alt="conference" />
-            <p>
+            {/* <p>
               With over 300 entrepreneurs in SIAWED, networking and building
               valuable ​connections is guaranteed.
-            </p>
+            </p> */}
           </div>
         </div>
       </CustomContainer>
