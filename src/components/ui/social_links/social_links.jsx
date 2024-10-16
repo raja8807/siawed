@@ -11,32 +11,35 @@ import styles from "./social_links.module.scss";
 
 const SocialLinks = () => {
   return (
-    <div className={styles.social}>
-      <Link target="_blank" href={"/"}>
-        <div className={styles.item}>
-          <Facebook />
-        </div>
-      </Link>
-      <Link target="_blank" href={"/"}>
-        <div className={styles.item}>
-          <Instagram />
-        </div>
-      </Link>
-      <Link target="_blank" href={"/"}>
-        <div className={styles.item}>
-          <Youtube />
-        </div>
-      </Link>
-      <Link target="_blank" href={"/"}>
-        <div className={styles.item}>
-          <Whatsapp />
-        </div>
-      </Link>
-      <Link target="_blank" href={"/"}>
-        <div className={styles.item}>
-          <Linkedin />
-        </div>
-      </Link>
+    <div className={styles.SocialLinks}>
+      <small>Keep In Touch</small>
+      <div className={styles.social}>
+        <Link target="_blank" href={"/"}>
+          <div className={styles.item}>
+            <Facebook />
+          </div>
+        </Link>
+        <Link target="_blank" href={"/"}>
+          <div className={styles.item}>
+            <Instagram />
+          </div>
+        </Link>
+        <Link target="_blank" href={"/"}>
+          <div className={styles.item}>
+            <Youtube />
+          </div>
+        </Link>
+        <Link target="_blank" href={"/"}>
+          <div className={styles.item}>
+            <Whatsapp />
+          </div>
+        </Link>
+        <Link target="_blank" href={"/"}>
+          <div className={styles.item}>
+            <Linkedin />
+          </div>
+        </Link>
+      </div>
     </div>
   );
 };

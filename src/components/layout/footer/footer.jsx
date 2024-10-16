@@ -77,7 +77,7 @@ const Footer = () => {
         <hr />
         <br />
         <div className={styles.bottom}>
-          <p>&copy; 2024</p>
+          <p>Copyright &copy; 2024 SIAWED</p>
           <div className={styles.links}>
             <Link href="/terms-conditions">Terms & Conditions</Link>
             <span>|</span>
