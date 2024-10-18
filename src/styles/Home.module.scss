@@ -25,4 +25,9 @@
   h4 {
     font-family: "garbatta-bold", sans-serif;
   }
+
+  div[class*="floating-whatsapp-button"] {
+    right: unset !important;
+    left: 2em !important;
+  }
 }
